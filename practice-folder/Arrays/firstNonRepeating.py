@@ -1,6 +1,6 @@
 
 def FirstNonRepeating(str):
-    char_order = []
+    char_order = [] ## List of characters. Reduce going through duplicates
     count = {}
 
     for char in str:

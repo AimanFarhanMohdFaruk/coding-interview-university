@@ -5,7 +5,7 @@ def tournamentWinnerOne(competitions, results):
   scores = {currentBest: 0}
 
   for i, competition in enumerate(competitions):
-    result = results[1]
+    result = results[i]
     home, away = competition
 
     winnningTeam = home if result == HOME_TEAM_WON else away

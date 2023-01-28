@@ -44,3 +44,11 @@ def findDuplicates(array): #works if the nums array is in the range of [1,n]
 
 
 print(findDuplicates([4,3,2,7,8,2,3,1]))
+
+
+# pattern:
+# for each number in array, iterate [n-1]
+# check if its negative, if it isn't  
+# then negate it.
+# if it is, append it to duplicates array
+# return duplicates

@@ -25,3 +25,11 @@ def longestSequenceTwo(array):
 print(longestSequence([1,2,3,100,200]))
 
 print(longestSequenceTwo([1,2,3,100,200]))
+
+# pattern:
+# remove all duplicates using set
+# for each num in the list:
+#   set the temporary sequence count to 1
+# while num + 1, is in numbers,
+# add to the temporary sequence count and add the num
+# the length is the max between the current lenght and temporary

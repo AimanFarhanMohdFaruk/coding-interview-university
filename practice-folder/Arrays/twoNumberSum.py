@@ -35,6 +35,26 @@ def twoNumberSumThree(array, targetSum):
 
 print(twoNumberSumThree([1,3,4,-9], 7))
 
+
+# Variation: Return index of numbers
+
+def TwoNumberSumIndex(array, targetSum):
+  numsMap = {}
+  for idx, value in enumerate(array):
+    potential_match = targetSum - value
+    if potential_match in numsMap:
+        return [numsMap[potential_match], idx]
+    else:
+      numsMap[value] = idx
+  return []
+
+print(TwoNumberSumIndex([1,3,4,-9], 7))
+
+
+# What does enumarate do ?
+# it gives a count and value from an iterable
+
+
 ## What's the tradeoff and techniques used ?
 # The first one runs in linear time since we iterate through once.
 # The second one runs in O(log n) since 

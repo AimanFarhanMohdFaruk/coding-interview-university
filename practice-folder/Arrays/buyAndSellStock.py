@@ -32,3 +32,5 @@ def max_profit(prices):
     return max_prof
 
 print(max_profit([310,315,275,295,260,270,290,230,255,250]))
+
+
